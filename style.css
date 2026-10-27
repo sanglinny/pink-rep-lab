@@ -56,10 +56,12 @@ details{border-top:1px solid var(--border-soft);padding-top:8px;margin-top:10px}
 input,select,textarea{font:inherit;min-height:48px;padding:10px 12px;border-radius:10px;border:2px solid var(--border);background:var(--surface);color:var(--text);max-width:100%}
 label{font-weight:700}
 .field-row{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;margin:14px 0}
+.field-row label{flex:1 1 220px;min-width:0}#jForm select,#jForm input[type=text]{width:100%}
 table{border-collapse:collapse;width:100%;border:2px solid var(--border);border-radius:var(--radius-sm);overflow:hidden;background:var(--surface)}th{background:var(--surface-soft);text-align:left}td,th{border-bottom:1px solid var(--border-soft);padding:10px 12px;vertical-align:top}
 @media (max-width:640px){table,tbody,tr,td,th{display:block}tr:first-child{display:none}tr{border-bottom:2px solid var(--border-soft);padding:8px 0}td{border:0;padding:4px 12px}td:first-child{font-weight:800}}
 .days{display:flex;gap:8px;flex-wrap:wrap}.day{width:56px;min-height:48px;display:grid;place-items:center;text-align:center;border:2px solid var(--border);border-radius:12px;cursor:pointer;background:var(--surface);font-weight:800}
 .day.on{border-color:var(--border);background:var(--pink);color:#191619}.day.on::after{content:" \2713";font-weight:900}
+.day.plan{box-shadow:inset 0 0 0 3px var(--pink)}.days.pick .day{cursor:pointer}.plan-out h3{margin-top:1.2em}
 .bar{height:16px;border:2px solid var(--border);border-radius:99px;background:var(--surface-soft);overflow:hidden}.bar i{display:block;height:100%;background:var(--pink)}
 #tOut,#dOut,#jPreview{border-left:6px solid var(--pink)}
 .band{box-shadow:0 0 0 100vmax var(--surface-soft);clip-path:inset(0 -100vmax);background:var(--surface-soft);padding-block:clamp(8px,2vw,24px);margin-block:var(--section-space) 0}.band.pink{box-shadow:0 0 0 100vmax var(--pink-soft);clip-path:inset(0 -100vmax);background:var(--pink-soft)}.band h2:first-child{margin-top:.6em}
